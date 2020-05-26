@@ -1,0 +1,16 @@
+<div *ngIf="movietrans" class="details">
+    <h3>You selected: {{movietrans.name}}. Details:</h3>
+    <table>
+        <tr>
+            <td>name: </td>
+            <td><input [(ngModel)]="movietrans.name"></td>
+            
+        </tr>
+        <tr>
+            <td>Release year: </td>
+            <td><input [(ngModel)]="movietrans.releaseYear"></td>
+            
+        </tr>
+       
+    </table>
+</div>

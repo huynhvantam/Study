@@ -1,0 +1,166 @@
+<h2>My favorrite Movies</h2>
+
+<div class="parent">
+    <ol class="movies">
+        <li class="movieListItem"
+        *ngFor="let eachMovie of movies"
+        [class.selected]="eachMovie === selectedMovie"
+        (click) ="onSelect(eachMovie)"
+        >
+          {{eachMovie.name}}: {{eachMovie.releaseYear}}
+                  </li>
+    </ol>
+    <app-movie-detail [movietrans]="selectedMovie"></app-movie-detail>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- bài 3 -->
+<!-- <h1>Movie''s details:</h1>
+<div><span>id: </span>{{movie.id}}</div>
+<div><span>name: </span>{{movie.name | uppercase}}</div>
+<div><span>Release Year:</span>{{movie.releaseYear}}</div>
+<h2>Edit your information:data-binding one-way</h2>
+<div style="margin: 10px; text-align: left;">
+    <label> Movie name:
+        <input [ngModel]="movie.name" placeholder="Enter movie's name">
+    </label>
+</div>
+<h2>Edit your information:data binding two-way</h2>
+<div style="margin: 10px; text-align: left;">
+    <label> Movie name:
+        <input [(ngModel)]="movie.releaseYear" placeholder="Enter movie's name">
+    </label>
+</div> -->
